@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    font-style: none;
+    background-color:rgb(196, 196, 231);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navbar>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+.navbar ul li ul li{
+    background-color:rgb(155, 155, 235);
+    list-style: none;
+    display: none;
+}
+#dropp{
+    margin-top: 0px;
+    width: 100px;
+    position: absolute;
+    text-align: left;
+}
+#dropp li a::before{
+    transform: scale(1);
+}
+.navbar ul li:hover ul li{
+    display: block;
+}
